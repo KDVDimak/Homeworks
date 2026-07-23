@@ -1,0 +1,12 @@
+.hi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    color: aliceblue;
+    size: 50px;
+    transition: 2s;
+}
+.hi:hover{
+    scale: 2 ;
+}
