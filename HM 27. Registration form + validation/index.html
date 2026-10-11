@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="all">
+        <div class="email">
+            <input class="email-input" type="email" placeholder="Введіть email">
+            <span class="email-error"></span>
+        </div>
+        
+        <div class="password">
+            <input class="password-input" type="password" placeholder="Введіть пароль">
+            <small class="password-hint">Мін. 8 символів, 1 літера та 1 цифра</small>
+            <span class="password-error"></span>
+        </div>
+
+        <div class="confirm-password">
+            <input class="confirm-input" type="password" placeholder="Підтвердіть пароль">
+            <span class="confirm-error"></span>
+        </div>
+
+        <div class="age">
+            <input class="age-input" type="number" placeholder="Введіть вік">
+            <span class="age-error"></span>
+        </div>
+
+        <div class="city">
+            <select class="city-select">
+                <option value="">...</option>
+                <option value="Odesa">Odesa</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Lviv">Lviv</option>
+                <option value="Kharkiv">Kharkiv</option>
+                <option value="Dnipro">Dnipro</option>
+            </select>
+            <span class="city-error"></span>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input class="agree-checkbox" type="checkbox"> Погоджуюсь з умовами
+                <span class="checkbox-error"></span>
+            </label>
+        </div>
+
+        <div class="sign-up">
+            <button class="sign-button" type="submit">SIGN UP</button>
+        </div>
+
+        <div class="clear">
+            <button class="clear-button" type="button">CLEAR</button>
+        </div>
+
+        <pre class="json-result"></pre>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>

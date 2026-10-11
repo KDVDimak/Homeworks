@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f7;
+}
+
+.all {
+    width: 360px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.all input,
+.all select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+
+    transition: border-color 0.25s, box-shadow 0.25s, background-color 0.25s;
+}
+
+.all input:focus,
+.all select:focus {
+    border-color: #2f80ed;
+    box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.12);
+}
+
+.email,
+.password,
+.confirm-password,
+.age,
+.city,
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.email-error,
+.password-error,
+.confirm-error,
+.age-error,
+.city-error,
+.checkbox-error {
+    color: crimson;
+    font-size: 13px;
+}
+
+.password-hint {
+    font-size: 12px;
+    color: #777;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.agree-checkbox {
+    width: auto !important;
+}
+
+.sign-button,
+.clear-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+
+    transition: opacity 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.sign-button {
+    background: #2f80ed;
+    color: white;
+}
+
+.clear-button {
+    background: #e5e5e5;
+}
+
+.sign-button:hover,
+.clear-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.sign-button:active,
+.clear-button:active {
+    transform: translateY(0);
+}
+
+.json-result {
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 13px;
+}
