@@ -147,15 +147,16 @@ form.addEventListener("submit", function(event){
                 } return
         } 
 
-                const obj = {
+                const userData = {
                         email: email.value,
                         password: password.value,
+                        confirm: confirm.value,
                         age: Number(age.value),
                         city: city.value,
                         agreement: checkbox.checked,
                 }
                 
-                const str = JSON.stringify(obj)
+                const str = JSON.stringify(userData)
                 result.textContent = str
 
                 localStorage.setItem("userData", str)
@@ -164,12 +165,13 @@ form.addEventListener("submit", function(event){
 const loadUserData = () =>{
                         const saved  = localStorage.getItem("userData")
                         if (saved){
-                            const newObj = JSON.parse(saved)
-                                email.value = newObj.email
-                                password.value = newObj.password
-                                age.value = newObj.age
-                                city.value = newObj.city
-                                checkbox.checked = newObj.agreement
+                            const savedUserData = JSON.parse(saved)
+                                email.value = savedUserData.email
+                                password.value = savedUserData.password
+                                confirm.value = savedUserData.confirm
+                                age.value = savedUserData.age
+                                city.value = savedUserData.city
+                                checkbox.checked = savedUserData.agreement
                         }
 }
 
